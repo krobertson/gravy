@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require File.join(File.dirname(__FILE__), 'service.rb')
+
+begin
+  Gravy::Service.run
+rescue => e
+  STDERR.puts e
+end
